@@ -2,24 +2,25 @@
 TEAMHUB is a web application designed to manage employee records efficiently. Built with React.js, Node.js, and SQLite, the app allows users to create, edit, and delete employee data while providing a clean and user-friendly interface.
 
 Features:
+
 Authentication:
-
 Login Page: Basic authentication using credentials to access the app.
-Employee Management:
 
+Employee Management:
 Add Employees: Input new employee details.
 Edit Employee Records: Update existing employee information.
 Delete Employees: Remove employee records with persistent deletion after reload.
-User Interface:
 
+User Interface:
 Employee List: Displays employee details on the homepage.
 Fixed Header: Contains "Home" and "Logout" buttons for seamless navigation.
 Conditional Rendering: Header is hidden on the login page.
-Additional Features:
 
+Additional Features:
 Form Validations: Ensures proper data entry for employee records.
 
 Technologies Used
+
 Frontend:
 React.js: For building the user interface.
 CSS & HTML: For styling and layout.
