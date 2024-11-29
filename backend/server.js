@@ -57,10 +57,9 @@ const initializeAndCreateDatabase = async () => {
         
 
         console.log('Registration table created successfully!');
-        const PORT = 5000;
-        app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`);
-        });
+        
+        
+      
     } catch (error) {
         console.error("Error connecting to the database:", error.message);
     }
@@ -153,4 +152,13 @@ app.post('/login',async (req,res)=>{
         res.status(500).json({ error: 'Internal server error' });
     }
    
-})
+});
+// Serve static files from the React app's build directory
+app.use(express.static(path.join(__dirname, '../frontend/build')));
+
+// Handle React routing (for paths not handled by backend APIs)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
+});
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
