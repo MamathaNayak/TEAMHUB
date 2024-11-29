@@ -1,26 +1,35 @@
-# TEAMHUB Project
+TEAMHUB is a web application designed to manage employee records efficiently. Built with React.js, Node.js, and SQLite, the app provides a clean and user-friendly interface for creating, editing, and deleting employee data.
 
-**TEAMHUB** is a web application built with React.js, Node.js, and SQLite. It allows users to manage employees, including creating, editing, and deleting employee records. The app includes a login page and a homepage that displays a list of employees.
+Features
+* Authentication:
+ Basic login functionality to securely access the application.
 
-## Features
+* Employee Management:
+Add new employee details.
+Edit existing employee records.
+Delete employee records with persistent changes after reload.
+User Interface:
 
-- **Login Page**: Secure authentication with login credentials.
-- **Employee Management**: Create, update, and delete employee records.
-- **Employee List**: View employee details on the homepage.
-- **Fixed Header**: Contains Home and Logout buttons for easy navigation.
-- **File Upload**: Upload employee images.
+* Employee list displayed on the homepage.
+Fixed header with "Home" and "Logout" buttons for easy navigation.
+Header hidden on the login page for a better user experience.
 
-## Technologies Used
+* Form Validations:
+Ensures accurate data entry when managing employee records.
 
-- **Frontend**: React.js, CSS, HTML
-- **Backend**: Node.js, Express.js
-- **Database**: SQLite3
-- **Authentication**: JWT Tokens
-- **State Management**: React Hooks
+Technologies Used
+* Frontend:
+React.js for building the user interface.
+CSS and HTML for styling and layout.
 
-## Installation
+* Backend:
+Node.js for server-side functionality.
+Express.js for API routing.
 
-### Clone the Repository
+* Database:
+SQLite3 for storing and managing employee data.
 
-```bash
-git clone https://github.com/your-username/TEAMHUB.git
+Installation
+Clone the repository:
+
+git clone https://github.com/MamathaNayak/TEAMHUB.git
